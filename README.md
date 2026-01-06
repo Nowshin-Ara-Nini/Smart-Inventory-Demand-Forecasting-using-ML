@@ -113,3 +113,16 @@ The Random Forest model outperforms baseline forecasting approaches by:
 - Libraries: Pandas, NumPy, Scikit-learn, Matplotlib
 
 - Model: Random Forest Regression
+📄 Research Paper (LaTeX)
+
+The research paper is written entirely in LaTeX and formatted according to the IEEE conference/journal style.
+
+- Paper Title: Smart Inventory Demand Forecasting using Machine Learning
+
+- Paper Format: LaTeX (IEEE style)
+
+- Main File: main.tex
+
+- Compiled Output: Smart-Inventory-Demand-Forecasting-using-ML.pdf
+
+📌 The paper includes problem motivation, literature review, methodology, equations, experimental results, and discussion.
