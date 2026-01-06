@@ -113,6 +113,7 @@ The Random Forest model outperforms baseline forecasting approaches by:
 - Libraries: Pandas, NumPy, Scikit-learn, Matplotlib
 
 - Model: Random Forest Regression
+- 
 📄 Research Paper (LaTeX)
 
 The research paper is written entirely in LaTeX and formatted according to the IEEE conference/journal style.
