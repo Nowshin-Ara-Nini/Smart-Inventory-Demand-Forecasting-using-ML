@@ -7,50 +7,50 @@ The system is built using a Random Forest regression model, chosen for its abili
 
 🎯 Objectives
 
-Predict product demand accurately using historical retail data
+- Predict product demand accurately using historical retail data
 
-Reduce inventory issues such as stockouts and overstocking
+- Reduce inventory issues such as stockouts and overstocking
 
-Apply time-aware evaluation for real-world forecasting scenarios
+- Apply time-aware evaluation for real-world forecasting scenarios
 
-Bridge the gap between demand forecasting and inventory control logic
+- Bridge the gap between demand forecasting and inventory control logic
 
 🧠 Methodology Overview
 1. Dataset Description
 
 The dataset contains historical retail transaction and inventory data, including:
 ``
-  Product and store identifiers
+- Product and store identifiers
 
-  Historical units sold
+- Historical units sold
 
-  Inventory levels
+- Inventory levels
 
-  Pricing and discount information
+- Pricing and discount information
 
-  Seasonality and promotional indicators
+- Seasonality and promotional indicators
 
-Time-related information is preserved to support sequential forecasting and proper evaluation.
+- Time-related information is preserved to support sequential forecasting and proper evaluation.
 
 2. Data Preprocessing
 
-  Handling missing values using statistical imputation
+- Handling missing values using statistical imputation
 
-  Encoding categorical features
+- Encoding categorical features
 
-  Scaling numerical features where required
+- Scaling numerical features where required
 
-  Sorting data chronologically to maintain temporal consistency
+- Sorting data chronologically to maintain temporal consistency
 
 3. Feature Engineering
 
 To improve predictive performance, several time-series features are created:
 
-  Lag features (previous demand values)
+- Lag features (previous demand values)
 
-  Rolling statistics (rolling mean and standard deviation)
+- Rolling statistics (rolling mean and standard deviation)
 
-  Calendar-based features to capture seasonality
+- Calendar-based features to capture seasonality
 
 These features help the model learn historical demand patterns more effectively.
 
@@ -58,27 +58,27 @@ These features help the model learn historical demand patterns more effectively.
 
 Model Used: Random Forest Regressor
 
-  Captures nonlinear relationships between demand and influencing factors
+- Captures nonlinear relationships between demand and influencing factors
 
-  Robust to noise and outliers
+- Robust to noise and outliers
 
-  Requires minimal parameter tuning compared to deep learning models
+- Requires minimal parameter tuning compared to deep learning models
 
 5. Model Evaluation
 
 To simulate real-world forecasting:
 
-  Time-based cross-validation is applied instead of random splitting
-  
-  Out-of-fold (OOF) predictions are generated for unbiased performance estimation
+- Time-based cross-validation is applied instead of random splitting
 
-Evaluation Metrics:
+- Out-of-fold (OOF) predictions are generated for unbiased performance estimation
 
-  RMSE (Root Mean Squared Error)
+- Evaluation Metrics:
 
-  MAE (Mean Absolute Error)
+- RMSE (Root Mean Squared Error)
 
-  R² Score
+- MAE (Mean Absolute Error)
+
+- R² Score
 
 These metrics help assess both accuracy and reliability of the forecasts.
 
@@ -86,11 +86,11 @@ These metrics help assess both accuracy and reliability of the forecasts.
 
 The predicted demand is further used to support inventory decisions, including:
 
-  Estimating required stock during supplier lead time
+- Estimating required stock during supplier lead time
 
-  Determining reorder quantities
+- Determining reorder quantities
 
-  Supporting proactive inventory planning
+- Supporting proactive inventory planning
 
 This step demonstrates how forecasting outputs can directly influence operational decisions.
 
@@ -98,18 +98,18 @@ This step demonstrates how forecasting outputs can directly influence operationa
 
 The Random Forest model outperforms baseline forecasting approaches by:
 
-  Reducing prediction error through feature engineering
+- Reducing prediction error through feature engineering
 
-  Producing stable forecasts under time-based evaluation
+- Producing stable forecasts under time-based evaluation
 
-  Providing interpretable insights into demand drivers
+- Providing interpretable insights into demand drivers
 
 (Exact metric values can be found in the notebook outputs.)
 
 🛠️ Technologies Used
 
-Programming Language: Python
+- Programming Language: Python
 
-Libraries: Pandas, NumPy, Scikit-learn, Matplotlib
+- Libraries: Pandas, NumPy, Scikit-learn, Matplotlib
 
-Model: Random Forest Regression
+- Model: Random Forest Regression
